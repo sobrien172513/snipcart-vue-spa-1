@@ -12,7 +12,7 @@ const apolloClient = new ApolloClient({
     cache,
 })
 
-export const crawlerQuery = {
+const crawlerQuery = {
     query: gql`query {
         products {
           id,
