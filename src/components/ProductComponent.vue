@@ -41,7 +41,7 @@ export default {
       .then(({data}) => {
         this.product = data.product
 
-        this.baseUrl = process.env.BASE_URL
+        this.baseUrl = process.env.VUE_APP_BASE
 
         this.customFieldsOptions = data.product.customFields.variants
           .reduce((options, option) => options.concat(`|${option}`),'')
