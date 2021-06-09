@@ -10,7 +10,7 @@
         :data-item-image="product.image.url" 
         :data-item-name="product.title" 
         data-item-quantity="1"
-        :data-item-url="`${baseUrl}/product/${product.id}`"
+        :data-item-url="`${baseUrl}/.netlify/functions/crawler`"
         data-item-custom1-name="variants"
         :data-item-custom1-options="customFieldsOptions"
       >
