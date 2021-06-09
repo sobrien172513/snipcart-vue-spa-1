@@ -10,7 +10,7 @@
         :data-item-image="product.image.url" 
         :data-item-name="product.title" 
         data-item-quantity="1"
-        data-item-url="https://demo.snipcart.com/"
+        :data-item-url="`${baseUrl}/product/${product.id}`"
         data-item-custom1-name="variants"
         :data-item-custom1-options="customFieldsOptions"
       >
@@ -32,13 +32,16 @@ export default {
   data(){
     return {
       product: null,
-      customFieldsOptions: ''
+      customFieldsOptions: '',
+      baseUrl: ''
     }
   },
   mounted(){
     this.apollo.defaultClient.query(productQuery(this.$route.params.id))
       .then(({data}) => {
         this.product = data.product
+
+        this.baseUrl = process.env.BASE_URL
 
         this.customFieldsOptions = data.product.customFields.variants
           .reduce((options, option) => options.concat(`|${option}`),'')
