@@ -1,6 +1,6 @@
 const gql = require('graphql-tag');
 const { ApolloClient, createHttpLink, InMemoryCache } = require('@apollo/client/core');
-const fetch = require("node-fetch");
+const fetch = require("node-fetch").default;
 
 const cache = new InMemoryCache()
 
