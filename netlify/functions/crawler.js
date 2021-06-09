@@ -1,5 +1,6 @@
 const gql = require('graphql-tag');
 const { ApolloClient, createHttpLink, InMemoryCache } = require('@apollo/client/core');
+const fetch = require('cross-fetch')
 
 const cache = new InMemoryCache()
 
@@ -10,6 +11,7 @@ const httpLink = createHttpLink({
 const apolloClient = new ApolloClient({
     link: httpLink,
     cache,
+    fetch
 })
 
 const crawlerQuery = {
