@@ -24,7 +24,7 @@ const crawlerQuery = {
 
 exports.handler = async (event, context) => {
   try {
-    const { data } = await apolloClient.defaultClient.query(crawlerQuery);
+    const { data } = await apolloClient.query(crawlerQuery);
     
     return { 
         statusCode: 200, 
