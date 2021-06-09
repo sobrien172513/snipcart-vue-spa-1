@@ -29,7 +29,10 @@ exports.handler = async (event, context) => {
     const { data } = await apolloClient.query(crawlerQuery);
     
     return { 
-        statusCode: 200, 
+        statusCode: 200,
+        headers: {
+          'Content-Type': 'application/json',
+        }, 
         body: JSON.stringify(data.products) 
     };
   } catch (error) {
