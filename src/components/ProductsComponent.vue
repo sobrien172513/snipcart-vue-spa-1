@@ -2,7 +2,7 @@
   <div class="products">
       <div class="product"
       @click="() => productClicked(product.id)"
-      :style="{backgroundColor: product.color}" 
+      :style="{backgroundColor: `rgb(${product.color})`}" 
       :key="product.id" v-for="product in products">
         <span class="title">{{product.title}}</span>
       </div>

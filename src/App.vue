@@ -25,6 +25,7 @@ body {
 }
 
 html {
+  --bgColor-default: rgba(var(--product-color), 1);
   overflow: hidden;
   box-sizing: border-box;
   width: 100%;

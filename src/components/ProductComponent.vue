@@ -36,6 +36,32 @@ export default {
       baseUrl: ''
     }
   },
+  methods: {
+    updateSnipcartTheme(color){
+      const setProperty = (property, color, opacity) => {
+        window.document.documentElement.style.setProperty(property, `rgba(${color}, ${opacity})`)
+      }
+      
+      setProperty('--color-default', color, 1)
+      setProperty('--bgColor-default', color, 0.05)
+      setProperty('--borderColor-default', color, 1)
+      setProperty('--color-alt', color, 1)
+      setProperty('--bgColor-alt', color, 0.05)
+      setProperty('--bgColor-info', color, 1)
+      setProperty('--color-badge', 'color', 1)
+      setProperty('--color-badge-active', color, 1)
+      setProperty('--bgColor-badge-active', '255, 255, 255', 1)
+      setProperty('--color-badge-disabled', color, 1)
+      setProperty('--color-link', color, .5)
+      setProperty('--color-link-hover', color, 1)
+      setProperty('--bgColor-buttonPrimary', color, 1)
+      setProperty('--bgColor-buttonPrimary-hover', color, 1)
+      setProperty('--color-input', 1)
+      setProperty('--borderColor-input', color, 1)
+      setProperty('--color-input-focus', 1)
+      setProperty('--borderColor-input-focus', color, 1)
+    }
+  },
   mounted(){
     this.apollo.defaultClient.query(productQuery(this.$route.params.id))
       .then(({data}) => {
@@ -46,7 +72,8 @@ export default {
         this.customFieldsOptions = data.product.customFields.variants
           .reduce((options, option) => options.concat(`|${option}`),'')
 
-        window.document.documentElement.style.setProperty('--product-color', data.product.color)
+        window.document.documentElement.style.setProperty('--product-color', `rgb(${data.product.color})`)
+        this.updateSnipcartTheme(data.product.color);
       })
   }
 }
