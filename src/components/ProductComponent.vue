@@ -60,6 +60,11 @@ export default {
       setProperty('--borderColor-input', color, 1)
       setProperty('--color-input-focus', 1)
       setProperty('--borderColor-input-focus', color, 1)
+      setProperty('--color-inputLabel', color, 1)
+      setProperty('--color-inputIcon', color, 1)
+      setProperty('--shadow-input-focus', color, 1)
+      setProperty('--color-inputIcon-checked', color, 1)
+      setProperty('--color-icon', color, 1)
     }
   },
   mounted(){
