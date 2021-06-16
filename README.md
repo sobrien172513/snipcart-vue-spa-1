@@ -1,24 +1,14 @@
-# snipcart-vue-spa
+# Vue.js SPA: Build a Powerful E-Commerce App 
+![Vue.js SPA tutorial](https://snipcart.com/media/205884/vue-graphcms-snipcart.png)
 
-## Project setup
-```
-yarn install
-```
+This post/tutorial focuses on Vue.js SPA for e-commerce.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## Tutorial steps 🛠
 
-### Compiles and minifies for production
-```
-yarn build
-```
+- Set up your schema- Create Content
+- Make your API accessible
+- Integrate your content in your applications
+    
+> Read the full tutorial [here](https://snipcart.com/blog/building-a-vuejs-spa).
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+> Try the demo [here](https://snipcart-vue-spa.netlify.app/#/).
