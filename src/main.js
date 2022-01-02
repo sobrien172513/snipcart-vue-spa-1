@@ -7,7 +7,7 @@ import ProductsComponent from './components/ProductsComponent'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 const httpLink = createHttpLink({
-    uri: 'https://api-ca-central-1.graphcms.com/v2/ckpn42kbid0wf01xsfl4ehoq0/master',
+    uri: 'https://api-us-east-1.graphcms.com/v2/ckxt3ez5w2gg701z3apj8cgws/master',
 })
 
 // Cache implementation
