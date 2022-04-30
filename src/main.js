@@ -1,7 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client/core'
-import VueApollo from '@vue/apollo-option'
+import { createApolloProvider } from "@vue/apollo-option"
+//import VueApollo from '@vue/apollo-option'
 import ProductComponent from './components/ProductComponent'
 import ProductsComponent from './components/ProductsComponent'
 import { createRouter, createWebHashHistory } from 'vue-router'
@@ -19,9 +20,12 @@ const apolloClient = new ApolloClient({
     cache,
 })
 
-const apolloProvider = new VueApollo({
-    defaultClient: apolloClient,
+const apolloProvider = createApolloProvider({
+  defaultClient: apolloClient,
 })
+// const apolloProvider = new VueApollo({
+//     defaultClient: apolloClient,
+// })
   
 const routes = [
     { path: '/', component: ProductsComponent },

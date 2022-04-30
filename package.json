@@ -37,6 +37,9 @@
     ],
     "parserOptions": {
       "parser": "babel-eslint"
+    },
+    "rules": {
+      "vue/attribute-hyphenation": "error"
     }
   },
   "browserslist": [
