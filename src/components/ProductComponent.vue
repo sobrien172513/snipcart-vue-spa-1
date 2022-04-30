@@ -81,7 +81,7 @@ export default {
 
 				this.baseUrl = process.env.VUE_APP_BASE;
 
-				this.customFieldsOptions = data.product.customFields.varients.reduce(
+				this.customFieldsOptions = data.product.customFields.variants.reduce(
 					(options, option) => options.concat(`|${option}`),
 					''
 				);
