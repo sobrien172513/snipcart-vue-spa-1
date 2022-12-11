@@ -92,7 +92,7 @@ export default {
         );
         this.updateSnipcartTheme(data.product.color);
       });
-  },
+  }, // test
 };
 </script>
 
