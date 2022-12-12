@@ -21,14 +21,14 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <!-- <div
-			hidden
-			id="snipcart"
-			data-api-key="ZWRlN2EyYjMtYzhiNy00Y2IzLTgyMjItZDgwYzQ0MjY5ZDNlNjM3NzY0NzIwMzk5MjEyMzQx"
-			data-config-modal-style="side"
-		></div> -->
-    <script>
-      const window = window;
+    <div
+      hidden
+      id="snipcart"
+      data-api-key="ZWRlN2EyYjMtYzhiNy00Y2IzLTgyMjItZDgwYzQ0MjY5ZDNlNjM3NzY0NzIwMzk5MjEyMzQx"
+      data-config-modal-style="side"
+    ></div>
+
+    <!-- <script>
       window.SnipcartSettings = {
         publicApiKey:
           "ZWRlN2EyYjMtYzhiNy00Y2IzLTgyMjItZDgwYzQ0MjY5ZDNlNjM3NzY0NzIwMzk5MjEyMzQx",
@@ -112,7 +112,7 @@
               (t.dataset.templatesUrl = window.SnipcartSettings.templatesUrl));
         }
       })();
-    </script>
+    </script> -->
     <noscript>
       <strong
         >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
