@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-    <link data-n-head="ssr" rel="preconnect" href="https://cdn.snipcart.com" />
+    <!-- <link data-n-head="ssr" rel="preconnect" href="https://cdn.snipcart.com" />
     <link data-n-head="ssr" rel="preconnect" href="https://app.snipcart.com" />
     <link
       data-n-head="ssr"
@@ -17,18 +17,18 @@
       data-n-head="ssr"
       src="https://cdn.snipcart.com/themes/v3.0/default/snipcart.js"
       defer
-    ></script>
+    ></script> -->
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <div
+    <!-- <div
       hidden
       id="snipcart"
       data-api-key="ZWRlN2EyYjMtYzhiNy00Y2IzLTgyMjItZDgwYzQ0MjY5ZDNlNjM3NzY0NzIwMzk5MjEyMzQx"
       data-config-modal-style="side"
-    ></div>
+    ></div> -->
 
-    <!-- <script>
+    <script>
       window.SnipcartSettings = {
         publicApiKey:
           "ZWRlN2EyYjMtYzhiNy00Y2IzLTgyMjItZDgwYzQ0MjY5ZDNlNjM3NzY0NzIwMzk5MjEyMzQx",
@@ -112,7 +112,7 @@
               (t.dataset.templatesUrl = window.SnipcartSettings.templatesUrl));
         }
       })();
-    </script> -->
+    </script>
     <noscript>
       <strong
         >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
