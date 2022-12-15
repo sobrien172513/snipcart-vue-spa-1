@@ -5,8 +5,8 @@ import {
   createHttpLink,
   InMemoryCache,
 } from "@apollo/client/core";
-//import { createApolloProvider } from "@vue/apollo-option"
-import VueApollo from "@vue/apollo-option";
+import { createApolloProvider } from "@vue/apollo-option";
+//import VueApollo from "@vue/apollo-option";
 import ProductComponent from "./components/ProductComponent";
 import ProductsComponent from "./components/ProductsComponent";
 import { createRouter, createWebHashHistory } from "vue-router";
@@ -25,12 +25,12 @@ const apolloClient = new ApolloClient({
   cache,
 });
 
-// const apolloProvider = createApolloProvider({
-//   defaultClient: apolloClient,
-// })
-const apolloProvider = new VueApollo({
+const apolloProvider = createApolloProvider({
   defaultClient: apolloClient,
 });
+// const apolloProvider = new VueApollo({
+//   defaultClient: apolloClient
+// });
 
 const routes = [
   { path: "/", component: ProductsComponent },
@@ -42,4 +42,7 @@ const router = createRouter({
   routes: routes,
 });
 
-createApp(App).use(router).provide("apollo", apolloProvider).mount("#app");
+createApp(App)
+  .use(router)
+  .provide("apollo", apolloProvider)
+  .mount("#app");
