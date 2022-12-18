@@ -3,10 +3,9 @@
 </template>
 
 <script>
-
 export default {
-  name: 'App'
-}
+  name: "App",
+};
 </script>
 
 <style>
@@ -31,5 +30,14 @@ html {
   width: 100%;
   height: 100%;
   padding: 10px;
+}
+
+.snipcart-button-primary {
+  color: #fff;
+  color: var(--color-buttonPrimary, #fff);
+  border-color: transparent;
+  border-color: var(--borderColor-buttonPrimary, transparent);
+  background-color: #1a4db3;
+  /*background-color: var(--bgColor-buttonPrimary,#1a4db3);*/
 }
 </style>
