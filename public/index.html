@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <script src="https://tags.tiqcdn.com/utag/success-steve-obrien/spa/dev/utag.sync.js"></script>
     <!-- <script>
       window.SnipcartSettings = {
         publicApiKey:
@@ -28,6 +29,182 @@
     <title>SPA Sandbox</title>
   </head>
   <body>
+    <script type="text/javascript">
+      var utag_data = {
+        page_name: "", // Contains a user-friendly name for the page.
+        page_section: "", // Contains a user-friendly page section, e.g. 'configuration section'.
+        page_category: "", // Contains a user-friendly page category, e.g. 'appliance page'.
+        page_subcategory: "", // Contains a user-friendly page subcategory, e.g. 'refrigerator page'.
+        page_type: "", // Contains a user-friendly page type, e.g. 'cart page'.
+        customer_id: "", // Contains the customer's ID.
+        customer_username: "", // Contains the customer's username, e.g. johndoe38.
+        customer_status: "", // Contains the customer's status, e.g. 'logged in'.
+        customer_type: "", // Contains the customer's type, e.g. 'bronze member'.
+        customer_email: "", // Contains the customer's email.
+        customer_city: "", // Contains the city portion of the customer's address.
+        customer_state: "", // Contains the state portion of the customer's address.
+        customer_zip: "", // Contains the zip code portion of the customer's address.
+        customer_country: "", // Contains the country portion of the customer's address.
+        search_term: "", // Contains the search term or query submitted by a visitor.
+        search_results: "", // Contains the number of results returned with a search query.
+        search_type: "", // Contains the type of search conducted by the visitor.
+        product_id: "", // Contains product ID(s) - multiple values should be comma-separated.
+        product_sku: "", // Contains product SKU(s) - multiple values should be comma-separated.
+        product_name: "", // Contains product name(s) - multiple values should be comma-separated.
+        product_brand: "", // Contains product brand(s) - multiple values should be comma-separated.
+        product_category: "", //
+        product_subcategory: "", // Contains product subcategory(s) - multiple values should be comma-separated.
+        product_unit_price: "", // Contains product unit price(s) - multiple values should be comma-separated.
+        product_list_price: "", // Contains product list price(s) before discount - multiple values should be comma-separated.
+        product_quantity: "", // Contains product quantity(s) - multiple values should be comma-separated.
+        product_discount: "", // Contains product discount(s) - multiple values should be comma-separated.
+        order_id: "", // Contains the order or transaction ID.
+        order_total: "", // Contains the order total value.
+        order_subtotal: "", // Contains the order subtotal (not containing taxes &amp; shipping).
+        order_payment_type: "", // Contains the order payment type.
+        order_discount: "", // Contains the order discount (if any).
+        order_shipping: "", // Contains the order shipping value.
+        order_tax: "", // Contains the order tax amount.
+        order_currency: "", // Contains the currency associated with the transaction, e.g. 'USD'.
+        order_coupon_code: "", // Contains the order coupon code.
+        order_coupon_discount: "", // Contains the order coupon discount.
+        order_store: "", // Contains identification information for a store.
+        order_type: "", // Contains type of order/cart.
+        site_region: "", // Contains values for the region or localized version, e.g. 'en_US'.
+        article_id: "", // Contains the article's ID.
+        article_name: "", // Contains the article's name.
+        article_author: "", // Contains the name of the author of an article.
+        article_publish_date: "", // Contains the publish date of an article.
+        video_id: "", // Contains the video ID.
+        video_name: "", // Contains the name of the video.
+        video_duration: "", // Contains the duration of the video. This value should be in seconds.
+        video_offset: "", // Contains the time into a video at which a certain state occurs.
+        video_state: "", // Contains the state of the video, e.g. start, play, pause, milestone, end.
+        video_player: "", // Contains the name of the video player.
+        video_player_version: "", // Contains the version of the video player.
+        site_name: "", // Contains the site's name.
+        site_description: "", // Contains the site's description.
+        post_title: "", // Contains the post's title.
+        post_category: "", // Contains the post's category, e.g. 'technology'.
+        post_tags: "", // Contains the post tags, e.g. 'tag management'.
+        post_author: "", // Contains the post author.
+        post_date: "", // Contains the post date.
+        search_query: "", // Contains the search query conducted by user.
+        event_name: "", // Tealium variable to identify unique events eg. social_share, user_login, etc.
+        tealium_event: "", // Identifies the unique names of tracked events.
+        event_type: "", // Contains the event type, e.g. link click', 'button click').
+        event_target: "", // Contains the name associated with an interactive element (link, button, etc).
+        event_attr1: "", // Contains custom attribute 1 associated with an event.
+        event_attr2: "", // Contains custom attribute 2 associated with an event.
+        event_attr3: "", // Contains custom attribute 3 associated with an event.
+        event_attr4: "", // Contains custom attribute 4 associated with an event.
+        product_price: "", //
+        product_category_slug: "", //
+        eventCategory: "", //
+        eventAction: "", //
+        eventLabel: "", //
+        eventValue: "", //
+        currency: "", //
+        site_currency: "", //
+        teal_event: "", //
+        gua_tag_tracking_id: "", //
+        product_category_id: "", //
+        product_category_slug_str: "", //
+        fl_category: "", //
+        fl_type: "", //
+        fl_event: "", //
+        donate_btn_click: "", //
+        fl_event_action: "", //
+        fl_event_label: "", //
+        time: "", //
+        page_location: "", //
+        ga_events: "", //
+        order_discount_amount: "", // Contains the order-level discount amount. eg. 10.00  as a string with only digits and decimal
+        order_currency_code: "", // Currency code for the site eg. USD,GBP,EUR,CAD
+        order_promo_code: "", // String list of comma separated promotion codes.
+        cj_action_id: "", //
+        customer_email_hashed: "", //
+        cj_pageType: "", //
+        product_parent: "", // product parent id
+        product_parent_id: "", // product step dsku
+        search_keyword: "", // search keyword
+        deviceType: "", // device type for criteo's site_type param
+        li_conversion_id: "", //
+        link_name: "", //
+        link_type: "", //
+        event_category: "", //
+        event_label: "", //
+        hero_id: "", //
+        Risky_Parameters: "", // Flag identifying &quot;Risky&quot; Parameters
+        internal_external_user: "", //
+        customer_status_registered: "", //
+        customer_email_hashed256: "", //
+        link_text: "", // (public) custom link tracking text
+        pageType: "", // (public) page type
+        userRegId: "", // (public) urs registration id
+        userStatus: "", // (public) user status
+        _clickText: "", // (internal) generic click text
+        _fbConvEvent: "", // (internal) facebook conversion event
+        purchaseCategory: "", //
+        purchaseProduct: "", //
+        purchasePrice: "", //
+        purchaseOrderId: "", //
+        purchaseEventOrderComplete: "", //
+        purchaseProductName: "", //
+        _currency: "", //
+        productPricingPlan: "", //
+        productOfferPeriod: "", //
+        show: "", //
+        productSelected: "", //
+        productSelectedPrice: "", //
+        mediaSvodContentType: "", //
+        _optanonConsentSocial: "", //
+        fb_event: "", //
+        cancellationReason: "", //
+        cancelSuccess: "", //
+        kidsFlag: "", //
+        brand: "", //
+        country: "", //
+        eec_action: "", //
+        page_type_event_virtual_view: "", //
+        account_email_hash_256: "", // Created for SHA-256 hashing via extension and passing as parameter to marketing tags.
+        account_email_hash_5: "", // Created for MD5 hashing via extension and passing as parameter to marketing tags.
+        sitename: "", //
+        pageName: "", //
+        subObject: "", //
+        type_ahead: "", //
+        object: "", //
+        AEP_debugEnabled: "", // true
+        AEP_prehidingStyle: "", // body { opacity: 0 !important }
+        AEP_renderDecisions: "", //
+        AEP_something: "", //
+        AEP_defaultConsent: "", //
+        AEP_finnsomethinglol: "", //
+        AEP_finnsomethinglol2: "", //
+        AEP_eventtest: "", //
+        region: "", //
+        sample_object_data: "", //
+        FP_Funnel_Clicks: "", // e.g.: clicks on thought leadership
+        linkedInclick_id: "", //
+        sms_abandonment: "", //
+      };
+    </script>
+
+    <!-- Loading script asynchronously -->
+    <script type="text/javascript">
+      (function(a, b, c, d) {
+        a = "https://tags.tiqcdn.com/utag/success-steve-obrien/spa/dev/utag.js";
+        b = document;
+        c = "script";
+        d = b.createElement(c);
+        d.src = a;
+        d.type = "text/java" + c;
+        d.async = true;
+        a = b.getElementsByTagName(c)[0];
+        a.parentNode.insertBefore(d, a);
+      })();
+    </script>
+
     <script>
       window.SnipcartSettings = {
         publicApiKey:
